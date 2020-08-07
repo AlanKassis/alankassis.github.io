@@ -1,0 +1,227 @@
+$animate: all 0.2s ease-in-out;
+
+* {
+  margin: 0;
+  font-family: 'Indie Flower';
+}
+
+body {}
+$border-color: rgb(238,149,145);
+.disclaimer {
+  text-align: center;
+}
+.hero-container {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  height: 100vh !important;
+  width: 100vw;
+}
+
+.hero-container ul li {
+  list-style: none;
+  margin-bottom: 2em;
+}
+
+.hero-image {
+  width: inherit;
+  height: inherit;
+  background-color: white;
+  background-image: url("../img/banner_image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-left-content {
+  // position: relative;
+  padding-left: 10%;
+  width: 25vw;
+}
+
+.hero-right-content {
+  // position: relative;
+  padding-right: 10%;
+  width: 25vw;
+}
+
+.hero-down-button-container {
+  position: relative;
+  bottom: 50px;
+  border-radius: 50%;
+  background-color: rgba(245, 208, 19, 0);
+  width: 35px;
+  height: 36px;
+}
+
+.hero-down-button {
+  position: relative;
+  border-radius: 10%;
+  width: 35px;
+  height: 35px;
+  transform: rotate(45deg);
+  background: linear-gradient(90deg, rgba(255,0,35,1) 0%, rgba(220,112,228,1) 50%, rgba(244,6,239,1) 100%);
+  box-shadow: 10px 10px 10px 3px grey;
+  border: 1px solid lightpink;
+}
+
+#hero-down-button {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+#hero-down-button:hover {
+  animation-duration: 0.5s;
+}
+@keyframes pulse {
+  0% {
+    top: 25%;
+  }
+
+  50% {
+    top: 15%;
+  }
+
+  100% {
+    top: 25%;
+  }
+}
+
+.socials {
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.nav {
+  position: sticky;
+  color: white;
+  font-size: 2em;
+  background-color: $border-color;
+  height: 100px;
+  text-align: center;
+  align-items: center;
+}
+ .wrapper{
+  .hover {
+    margin: 0 auto;
+    padding: 0;
+    transition: $animate;
+    position: relative;
+
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 0;
+      height: 5px;
+      margin: 5px 0 0;
+      transition: $animate;
+      transition-duration: 0.75s;
+      opacity: 0;
+      background-color: rgb(245,191,241);
+    }
+
+    &.hover-1 {
+      &:before {
+        left: 0;
+      }
+
+      &:after {
+        right: 0;
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: rgb(245,191,241);
+
+    .hover {
+      &:after,
+      &:before {
+        width: 100%;
+        opacity: 1;
+      }
+
+      &.hover-1 {
+        &:after,
+        &:before {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+
+#profile-picture {
+  margin: 5vh auto 5vh auto;
+  width:400px;
+  height:400px;
+  background-image: url("../img/Alan-Japan.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  border-radius:50%;
+  background-color: rgb(245,191,241);
+  border: 5px solid $border-color;
+}
+#about {
+  text-align: center;
+}
+
+#about h1 {
+  font-size: 4em;
+}
+
+.introduction {
+  margin: 0 15vw;
+  font-size: 2em;
+
+  abbr[title] {
+    text-decoration: none;
+  }
+}
+
+#projects {
+  text-align: center;
+
+.projects {
+  margin-top:25vh;
+   h1 {
+     font-size: 4em;
+   }
+  }
+
+#coming-soon {
+  }
+}
+
+.container-fluid #coffee {
+  margin:25vh 0 0 0;
+  padding: 0;
+.coffee{
+   h1 {
+     text-align: center;
+     font-size: 4em;
+    margin-bottom: 5vh;
+   }
+  }
+  #group-photo {
+    padding: 0 !important;
+    margin: 0;
+    color:red;
+    // at larger break points the height should increase
+    height: 30vh;
+    background-image: url("../img/coffee/group-photo.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: $border-color 5px solid;
+  }
+}
