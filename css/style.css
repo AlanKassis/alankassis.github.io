@@ -165,7 +165,7 @@
 @media only screen and (max-width: 375px) {
   .hero-container {
     display: grid;
-    grid-template-areas: 'img img' 'l r';
+    grid-template-areas: 'img img' 'l r';
     font-size: 1.3em; }
     .hero-container ul li {
       margin: 0px; }
