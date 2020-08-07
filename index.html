@@ -2,63 +2,133 @@
 <html lang="en">
 
 <head>
-  <!-- By Alan Kassis -->
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <!-- Chrome dev tools responsive design breakpoints werent working correctly so I found this fix -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/main.css">
-  <title>Alan Kassis Portfolio</title>
+  <title>A&D</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+  <link href="https://unpkg.com/pattern.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class='wrapper'>
-    <!-- wrapper for the whole page -->
+  <div class="disclaimer"> * This Site is a Work In Progress * </div>
+  <div class="hero-container">
+    <div class="hero-left-content">
+      <ul>
+        <li>Designer</li>
+        <li>Artist</li>
+        <li>Barista</li>
+      </ul>
+    </div>
+    <div class='hero-image'></div>
+    <div class="hero-right-content">
+      <ul>
+        <li>Web Designer</li>
+        <li>Front End Ninja</li>
+        <li>Barista</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Add Links to socials -->
+  <!-- TODO: Add stylish icons for socials -->
+  <div class="container-fluid">
+    <div class="socials row">
+      <div class="col" id="facebook">Facebook</div>
+      <div class="col" id="instagram">Insta</div>
+      <div class="hero-down-button-container">
+        <div class="hero-down-button" id="hero-down-button" tabindex="0"></div>
+      </div>
+      <div class="col" id="LinkedIn">LinkedIn</div>
+      <div class="col" id="GitHub">Git</div>
+    </div>
+  </div>
+  <!-- Add Nav Bar -->
+  <div class="nav container-fluid">
+    <div class="row">
+      <div class="wrapper col">
+        <div class="hover hover-1" id="projects"> * Projects * </div>
+      </div>
+      <!-- <div class="wrapper col">
+        <div class="col hover hover-1" id="skills"> * Skills *</div>
+      </div> -->
+      <div class="wrapper col">
+        <div class="col hover hover-1" id="nav coffee"> * Coffee *</div>
+      </div>
+      <div class="wrapper col">
+        <div class="col hover hover-1" id="contact">* Contact * </div>
+      </div>
+    </div>
+  </div>
 
-    <section class='header section'>
-      <!-- Logo -->
-    
-      <header class="header content">
-        <!-- Header Text -->
-        <h1> Alan Kassis </h1>
-        <h2>  Front End Ninja </h2>
-      </header>
-    </section>
-
-
-    <div class="border"></div>
-    <!-- main image  -->
-    <main class="main section">
-      <img class="hero-image" src="img/banner_image.jpg" alt="banner image" />
-    </main>
-    <div class="border"></div>
-    <!-- Featured Works  -->
-    <div id="featuretext">
-      <h1> Featured Work </h1>
+  <!-- ************** -->
+  <!-- About section  -->
+  <!-- ************** -->
+  <container class="container-fluid">
+    <div id="profile-picture"></div>
+    <div id="about">
+      <h1> * Hey, I'm Alan * </h1>
+      <div class="introduction">
+        I am a web developer based in Queensland, Australia. I spend my days teaching myself to build websites,
+        working as a coffee makin' expert <a href="https://www.facebook.com/blackbirdcairns/"> @ Black Bird Esspresso </a>
+        and practicing my <abbr title="Japanese Language">日本語</abbr> skills by watching <em>all</em> the anime.
+      </div>
     </div>
 
-    <section class="featured section">
-      <!-- In this section use three children -->
-      <!-- each child should have a picture, some text -->
-      <!-- each image should be wrapped in a div-->
-      <!-- TODO: Make pages for each featured works to link to -->
-      <div class="img-container">
-        <img class="img-feature1" src="img/boxing-gloves.png" alt="boxing gloves" />
-        <p> Boxing </p>
-      </div>
+    <!-- ************** -->
+    <!-- Projects section  -->
+    <!-- ************** -->
 
-      <div class="img-container">
-        <img class="img-feature2" src="img/Old-school-computer-small.png" alt="computer" />
-        <p> Web Design </p>
+    <div class="container-fluid" id="projects">
+      <div class="projects container">
+        <h1> * Projects * </h1>
       </div>
-
-      <div class="img-container">
-        <img class="img-feature3" src="img/oldschool-controller.png" alt="controller" />
-        <p> Gaming </p>
+      <div id="coming-soon">
+        <h2> More to come ... </h2>
       </div>
-    </section>
+    </div>
 
+    <!-- ************** -->
+    <!-- Skills section  -->
+    <!-- ************** -->
+
+    <!-- TODO: Add University of Redlands Credentials -->
+    <!-- TODO: Add Front-end Developer certificate -->
+    <!-- <div class="container-fluid" id="skills">
+      <div class="skills container">
+        <h1> * Skills  * </h1>
+      </div>
+      <div id="university">
+        <h2> Bachelors of Arts in <strong>Computer Science</strong> from the University of Redlands, California </h2>
+        <h3> Minors in <strong>Japanese</strong> & <strong>Business</strong> </h3>
+      </div>
+      <div id="certificate">
+        TODO: add Front-End Web Developer Nanodegree png
+      </div> -->
+
+    <!-- ************** -->
+    <!-- Coffee section  -->
+    <!-- ************** -->
+    <div class="container-fluid" id="coffee">
+      <div class="coffee container">
+        <h1> * Coffee * </h1>
+      </div>
+      <div id="group-photo"></div>
+
+      <!-- TODO: Implement a responsive image grid here -->
+      <div class="row">
+        <div class="col">  </div>
+        <div class="col">  </div>
+      </div>
+      <div class="row">
+        <div class="col">  </div>
+        <div class="col">  </div>
+      </div>
+    </div>
 </body>
+<script src="js/page.js">
+</script>
 
 </html>

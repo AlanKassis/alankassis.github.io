@@ -1,0 +1,28 @@
+{
+  "name": "portfolio_project",
+  "version": "1.0.0",
+  "description": "* A simple project to learn about HTML (Hypertext Markup language) and CSS (Cascading Style Sheets)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlanKassis/Portfolio_Project.git"
+  },
+  "author": "Alan Kassis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlanKassis/Portfolio_Project/issues"
+  },
+  "homepage": "https://github.com/AlanKassis/Portfolio_Project#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.1",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp-sass": "^4.1.0",
+    "prettier": "2.0.5"
+  }
+}
