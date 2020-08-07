@@ -7,9 +7,11 @@ $animate: all 0.2s ease-in-out;
 
 body {}
 $border-color: rgb(238,149,145);
+
 .disclaimer {
-  text-align: center;
+   text-align: center;
 }
+
 .hero-container {
   font-size: 2em;
   display: flex;
@@ -106,7 +108,8 @@ $border-color: rgb(238,149,145);
   text-align: center;
   align-items: center;
 }
- .wrapper{
+
+.wrapper {
   .hover {
     margin: 0 auto;
     padding: 0;
@@ -160,17 +163,17 @@ $border-color: rgb(238,149,145);
 }
 
 #profile-picture {
-  margin: 5vh auto 5vh auto;
-  width:400px;
-  height:400px;
+  margin: 5vh auto;
+  height: 400px;
   background-image: url("../img/Alan-Japan.jpg");
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size:contain;
-  border-radius:50%;
+  background-size: contain;
+  border-radius: 50%;
   background-color: rgb(245,191,241);
   border: 5px solid $border-color;
 }
+
 #about {
   text-align: center;
 }
@@ -191,37 +194,86 @@ $border-color: rgb(238,149,145);
 #projects {
   text-align: center;
 
-.projects {
-  margin-top:25vh;
-   h1 {
-     font-size: 4em;
-   }
+  .projects {
+    margin-top: 25vh;
+
+    h1 {
+      font-size: 4em;
+    }
   }
 
-#coming-soon {
-  }
+  #coming-soon {}
 }
 
 .container-fluid #coffee {
-  margin:25vh 0 0 0;
+  margin: 25vh 0 0;
   padding: 0;
-.coffee{
-   h1 {
-     text-align: center;
-     font-size: 4em;
-    margin-bottom: 5vh;
-   }
+
+  .coffee {
+    h1 {
+      text-align: center;
+      font-size: 4em;
+      margin-bottom: 5vh;
+    }
   }
+
   #group-photo {
     padding: 0 !important;
     margin: 0;
-    color:red;
+    color: red;
     // at larger break points the height should increase
     height: 30vh;
     background-image: url("../img/coffee/group-photo.jpg");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border: $border-color 5px solid;
   }
 }
+//Small screens only
+@media only screen and (max-width: 375px) {
+  .hero-container {
+    display: grid;
+    grid-template-areas: 'img img'
+                        'l r';
+   font-size: 1.3em;
+   ul li {
+     margin: 0px;
+   }
+  }
+  .hero-image {
+    grid-area: img;
+  }
+  .hero-left-content {
+    width:50vw;
+    position: relative;
+    top:-27vh;
+    grid-area: l;
+  }
+  .hero-right-content {
+    width:50vw;
+    position: relative;
+    top:-25vh;
+    grid-area: r;
+  }
+  .socials {
+
+  }
+  .nav {
+    font-size: 1em;
+    height:50px;
+    position: relative;
+    bottom:50px;
+  }
+  #profile-picture {
+    margin: 0 0 5vh 0;
+  }
+  #about h1 {
+    font-size: 3.5em;
+  }
+
+  #projects .projects h1 {
+    font-size: 3.5em;
+  }
+}
+//large screens

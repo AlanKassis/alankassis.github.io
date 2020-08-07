@@ -115,8 +115,7 @@
     width: 50%; }
 
 #profile-picture {
-  margin: 5vh auto 5vh auto;
-  width: 400px;
+  margin: 5vh auto;
   height: 400px;
   background-image: url("../img/Alan-Japan.jpg");
   background-position: center;
@@ -146,7 +145,7 @@
       font-size: 4em; }
 
 .container-fluid #coffee {
-  margin: 25vh 0 0 0;
+  margin: 25vh 0 0;
   padding: 0; }
   .container-fluid #coffee .coffee h1 {
     text-align: center;
@@ -162,3 +161,34 @@
     background-repeat: no-repeat;
     background-position: center;
     border: #ee9591 5px solid; }
+
+@media only screen and (max-width: 375px) {
+  .hero-container {
+    display: grid;
+    grid-template-areas: 'img img' 'l r';
+    font-size: 1.3em; }
+    .hero-container ul li {
+      margin: 0px; }
+  .hero-image {
+    grid-area: img; }
+  .hero-left-content {
+    width: 50vw;
+    position: relative;
+    top: -27vh;
+    grid-area: l; }
+  .hero-right-content {
+    width: 50vw;
+    position: relative;
+    top: -25vh;
+    grid-area: r; }
+  .nav {
+    font-size: 1em;
+    height: 50px;
+    position: relative;
+    bottom: 50px; }
+  #profile-picture {
+    margin: 0 0 5vh 0; }
+  #about h1 {
+    font-size: 3.5em; }
+  #projects .projects h1 {
+    font-size: 3.5em; } }
