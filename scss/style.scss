@@ -36,13 +36,13 @@ $border-color: rgb(238,149,145);
 }
 
 .hero-left-content {
-  // position: relative;
+ position: relative;
   padding-left: 10%;
   width: 25vw;
 }
 
 .hero-right-content {
-  // position: relative;
+   position: relative;
   padding-right: 10%;
   width: 25vw;
 }
@@ -164,11 +164,12 @@ $border-color: rgb(238,149,145);
 
 #profile-picture {
   margin: 5vh auto;
-  height: 400px;
+  width: 500px;
+  height: 50vh;
   background-image: url("../img/Alan-Japan.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   border-radius: 50%;
   background-color: rgb(245,191,241);
   border: 5px solid $border-color;
@@ -235,15 +236,17 @@ $border-color: rgb(238,149,145);
   .hero-container {
     display: grid;
     grid-template-areas: 'img img'
-                        'l r';
-   font-size: 1.3em;
+     'l r';
+   font-size: 1.2em;
    ul li {
      margin: 0px;
    }
   }
+
   .hero-image {
     grid-area: img;
   }
+
   .hero-left-content {
     width:50vw;
     position: relative;
@@ -266,7 +269,8 @@ $border-color: rgb(238,149,145);
     bottom:50px;
   }
   #profile-picture {
-    margin: 0 0 5vh 0;
+    margin: 0 auto 5vh auto;
+    width: 200px;
   }
   #about h1 {
     font-size: 3.5em;
