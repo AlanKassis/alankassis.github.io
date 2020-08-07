@@ -235,8 +235,7 @@ $border-color: rgb(238,149,145);
 @media only screen and (max-width: 375px) {
   .hero-container {
     display: grid;
-    grid-template-areas: 'img img'
-     'l r';
+    grid-template-areas: 'img img' 'l r';
    font-size: 1.2em;
    ul li {
      margin: 0px;
