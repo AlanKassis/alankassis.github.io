@@ -31,20 +31,31 @@
         <li>Barista</li>
       </ul>
     </div>
+    <!-- close the hero container -->
   </div>
   <!-- Add Links to socials -->
   <!-- TODO: Add stylish icons for socials -->
-  <div class="container-fluid">
-    <div class="socials row">
-      <div class="col" id="facebook">Facebook</div>
-      <div class="col" id="instagram">Insta</div>
-      <div class="hero-down-button-container">
+  <div class="socials container-fluid">
+    <div class="row" id="socials-row">
+    <div class="col">
+      <ion-icon name="logo-facebook">facebook</ion-icon>
+    </div>
+    <div class="col">
+      <ion-icon name="logo-instagram">insta</div>
+    <div class="col" id="hero-down-button--col">
+      <!-- <div class="hero-down-button-container"> -->
         <div class="hero-down-button" id="hero-down-button" tabindex="0"></div>
-      </div>
-      <div class="col" id="LinkedIn">LinkedIn</div>
-      <div class="col" id="GitHub">Git</div>
+      <!-- </div> -->
+    </div>
+    <div class="col">
+    <ion-icon name="logo-linkedin"></ion-icon>
+  </div>
+  <div class="col">
+    <ion-icon name="logo-github"></ion-icon>
     </div>
   </div>
+  </div>
+</div>
   <!-- Add Nav Bar -->
   <div class="nav container-fluid">
     <div class="row">
@@ -113,8 +124,7 @@
   <!-- ************** -->
   <!-- Coffee section  -->
   <!-- ************** -->
-  <div class="container-fluid" id="coffee">
-    <div class="coffee container">
+    <div class="coffee container-fluid">
       <h1> * Coffee * </h1>
     </div>
     <div id="group-photo"></div>
@@ -128,9 +138,9 @@
       <div class="col"> </div>
       <div class="col"> </div>
     </div>
-  </div>
 </body>
 <script src="js/page.js">
 </script>
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
 </html>
