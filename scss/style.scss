@@ -162,6 +162,18 @@ $border-color: rgb(238,149,145);
   }
 }
 
+#profile-picture--pattern-wrapper {
+  position: relative;
+  top:25px;
+  left:50px;
+  height: 50vh;
+  width:500px;
+  margin: 0 auto 0 auto;
+  border-radius: 10%;
+  z-index: -1;
+  color:$border-color;
+}
+
 #profile-picture {
   margin: 5vh auto;
   width: 500px;
@@ -170,8 +182,8 @@ $border-color: rgb(238,149,145);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  background-color: rgb(245,191,241);
+  border-radius: 10%;
+  // background-color: rgb(245,191,241);
   border: 5px solid $border-color;
 }
 
@@ -272,6 +284,17 @@ $border-color: rgb(238,149,145);
     width: 200px;
     height: 20vh;
   }
+  #profile-picture--pattern-wrapper {
+    position: relative;
+    top:15px;
+    left:25px;
+    height: 20vh;
+    width:200px;
+    border-radius: 10%;
+    z-index: -1;
+    color:$border-color;
+  }
+
   #about h1 {
     font-size: 2.9em;
   }

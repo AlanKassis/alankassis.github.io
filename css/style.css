@@ -115,6 +115,17 @@
   .wrapper:hover .hover.hover-1:after, .wrapper:hover .hover.hover-1:before {
     width: 50%; }
 
+#profile-picture--pattern-wrapper {
+  position: relative;
+  top: 25px;
+  left: 50px;
+  height: 50vh;
+  width: 500px;
+  margin: 0 auto 0 auto;
+  border-radius: 10%;
+  z-index: -1;
+  color: #ee9591; }
+
 #profile-picture {
   margin: 5vh auto;
   width: 500px;
@@ -123,8 +134,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  background-color: #f5bff1;
+  border-radius: 10%;
   border: 5px solid #ee9591; }
 
 #about {
@@ -192,6 +202,15 @@
     margin: 0 auto 5vh auto;
     width: 200px;
     height: 20vh; }
+  #profile-picture--pattern-wrapper {
+    position: relative;
+    top: 15px;
+    left: 25px;
+    height: 20vh;
+    width: 200px;
+    border-radius: 10%;
+    z-index: -1;
+    color: #ee9591; }
   #about h1 {
     font-size: 2.9em; }
   #projects .projects h1 {
