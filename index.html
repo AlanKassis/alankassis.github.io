@@ -34,42 +34,47 @@
     <!-- close the hero container -->
   </div>
   <!-- Add Links to socials -->
-  <!-- TODO: Add stylish icons for socials -->
   <div class="socials container-fluid">
     <div class="row" id="socials-row">
-    <div class="col">
-      <ion-icon name="logo-facebook">facebook</ion-icon>
-    </div>
-    <div class="col">
-      <ion-icon name="logo-instagram">insta</div>
-    <div class="col" id="hero-down-button--col">
-      <!-- <div class="hero-down-button-container"> -->
+      <div class="col">
+        <a href="https://www.facebook.com/alan.kassis">
+          <ion-icon name="logo-facebook">facebook</ion-icon>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.instagram.com/alan_kassis/">
+          <ion-icon name="logo-instagram">insta</div></a>
+      <div class="col" id="hero-down-button--col">
+        <!-- <div class="hero-down-button-container"> -->
         <div class="hero-down-button" id="hero-down-button" tabindex="0"></div>
-      <!-- </div> -->
+        <!-- </div> -->
+      </div>
+      <div class="col">
+        <a href="https://linkedin.com/in/alan-kassis-39a75059">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://github.com/AlanKassis">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </div>
     </div>
-    <div class="col">
-    <ion-icon name="logo-linkedin"></ion-icon>
   </div>
-  <div class="col">
-    <ion-icon name="logo-github"></ion-icon>
-    </div>
-  </div>
-  </div>
-</div>
   <!-- Add Nav Bar -->
   <div class="nav container-fluid">
     <div class="row">
       <div class="wrapper col">
-        <div class="hover hover-1" id="projects"> * Projects * </div>
+        <div class="hover hover-1" id="nav1"> <a href="#projects"> * Projects * </a> </div>
       </div>
       <!-- <div class="wrapper col">
         <div class="col hover hover-1" id="skills"> * Skills *</div>
       </div> -->
       <div class="wrapper col">
-        <div class="col hover hover-1" id="nav coffee"> * Coffee *</div>
+        <div class="col hover hover-1" id="nav2"> <a href="#coffee"> * Coffee * </a> </div>
       </div>
       <div class="wrapper col">
-        <div class="col hover hover-1" id="contact">* Contact * </div>
+        <div class="col hover hover-1" id="nav3"> <a href="#contact">* Contact * </a> </div>
       </div>
     </div>
   </div>
@@ -78,12 +83,14 @@
   <!-- About section  -->
   <!-- ************** -->
   <div class="container-fluid ">
-      <div id="profile-picture">  <div class="pattern-dots-md gray-light" id="profile-picture--pattern-wrapper"></div>
-</div>
     <div id="about">
       <h1> * Hey, I'm Alan * </h1>
+      <div id="profile-picture">
+        <div class="pattern-dots-sm gray-light" id="pattern-wrapper">
+        </div>
+      </div>
       <div class="introduction">
-        I am a web developer based in Queensland, Australia. I spend my days teaching myself to build websites,
+        I am a <br>web developer based in Queensland, Australia. I spend my days teaching myself to build websites,
         working as a coffee makin' expert <a href="https://www.facebook.com/blackbirdcairns/"> @ Black Bird Esspresso </a>
         and practicing my <abbr title="Japanese Language">日本語</abbr> skills by watching <em>all</em> the anime.
       </div>
@@ -124,20 +131,42 @@
   <!-- ************** -->
   <!-- Coffee section  -->
   <!-- ************** -->
-    <div class="coffee container-fluid">
-      <h1> * Coffee * </h1>
-    </div>
-    <div id="group-photo"></div>
+  <div class="coffee container-fluid" id="coffee">
+    <h1> * Coffee * </h1>
+  </div>
 
-    <!-- TODO: Implement a responsive image grid here -->
+  <!-- TODO: Implement a responsive image grid here -->
+  <div class="container" id="coffee-photo-grid">
+    <!-- this wasn't working nicely because the grid needed a container  -->
+    <!-- a grid only needs one row  -->
+    <!-- design content column by column not row by row -->
     <div class="row">
-      <div class="col"> </div>
-      <div class="col"> </div>
+      <div class="col-lg-12 col-md-12 mb-4">
+        <img src="img/coffee/group-photo.jpg" alt="" class="img-fluid my-4">
+      </div>
+      <div class="col-lg-6 col-sm-6">
+        <img src="img/coffee/love-cold-brew.jpg" alt="" class="img-fluid mb-4">
+        <img src="img/coffee/master hospo.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-sm-3" id="col-2">
+        <img src="img/coffee/keep cups.jpg" alt="" class="img-fluid mb-4">
+        <img src="img/coffee/swan.jpg" alt="" class="img-fluid">
+      </div>
+      <div class="col-lg-3 col-sm-3" id="col-3">
+        <img src="img/coffee/swan-mocha.jpg" alt="" class="img-fluid mb-4">
+        <div class="row nopadding">
+          <div class="col-lg-6 col-sm-12 pl-0"><img src="img/coffee/master hospo.jpg" alt="" class="img-fluid mb-4"></div>
+          <div class="col-lg-6 col-sm-12 pr-0"><img src="img/coffee/master hospo.jpg" alt="" class="img-fluid"></div>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="col"> </div>
-      <div class="col"> </div>
+    <div class="row ">
+      <div class="col-lg-12 ">
+        <img src="img/coffee/covid-work-photo.jpg" alt="" class="img-fluid my-4">
+      </div>
     </div>
+  </div>
+
 </body>
 <script src="js/page.js">
 </script>

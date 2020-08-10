@@ -2,6 +2,22 @@
   margin: 0;
   font-family: 'Indie Flower'; }
 
+body a {
+  text-decoration: none;
+  color: white; }
+
+body a:link {
+  color: white; }
+
+body a:visited {
+  color: white; }
+
+body a:focus {
+  border-bottom: none; }
+
+body a:hover {
+  text-decoration: none; }
+
 .disclaimer {
   text-align: center; }
 
@@ -38,6 +54,7 @@
   position: relative;
   text-align: center; }
   .socials ion-icon {
+    color: white;
     background-color: #ee9591;
     border-radius: 50%;
     padding: 0.3em;
@@ -49,7 +66,7 @@
   bottom: 50px; }
 
 .hero-down-button {
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   position: relative;
   border-radius: 10%;
   width: 35px;
@@ -83,7 +100,8 @@
   background-color: #ee9591;
   height: 100px;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 10vh !important; }
 
 .wrapper .hover {
   margin: 0 auto;
@@ -115,30 +133,36 @@
   .wrapper:hover .hover.hover-1:after, .wrapper:hover .hover.hover-1:before {
     width: 50%; }
 
-#profile-picture--pattern-wrapper {
-  position: relative;
-  top: 25px;
-  left: 50px;
-  height: 50vh;
-  width: 500px;
-  margin: 0 auto;
-  border-radius: 10%;
-  z-index: -1;
-  color: #ee9591; }
-
 #profile-picture {
-  margin: 5vh auto;
-  width: 500px;
+  margin: 2em auto 5vh;
+  width: 90%;
+  max-width: 700px;
   height: 50vh;
   background-image: url("../img/Alan-Japan.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10%;
+  border-radius: 30%;
   border: 5px solid #ee9591; }
+
+#pattern-wrapper {
+  position: relative;
+  top: 25px;
+  left: 50px;
+  height: inherit;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 30%;
+  z-index: -1;
+  color: #ee9591; }
 
 #about {
   text-align: center; }
+  #about a {
+    color: #ee9591; }
+  #about a:hover {
+    text-decoration: underline;
+    text-decoration-color: #dc70e4; }
 
 #about h1 {
   font-size: 4em; }
@@ -152,28 +176,28 @@
 #projects {
   text-align: center; }
   #projects .projects {
-    margin-top: 25vh; }
+    margin-top: 5vh; }
     #projects .projects h1 {
       font-size: 4em; }
 
 .coffee {
-  text-align: center; }
+  text-align: center;
+  margin-top: 5vh; }
   .coffee h1 {
     text-align: center;
     font-size: 4em;
-    margin-bottom: 5vh;
     color: red; }
 
-#group-photo {
+#coffee-photo-grid {
+  background-color: firebrick;
+  border: 10px solid black;
+  margin-bottom: 10vh; }
+  #coffee-photo-grid img {
+    box-shadow: 5px 3px 10px 5px; }
+
+.nopadding {
   padding: 0 !important;
-  margin: 0;
-  color: red;
-  height: 30vh;
-  background-image: url("../img/coffee/group-photo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: #ee9591 5px solid; }
+  margin: 0 !important; }
 
 @media only screen and (max-width: 575px) {
   .hero-container {
@@ -202,7 +226,7 @@
     margin-bottom: 10px !important; }
   #profile-picture {
     margin: 0 auto 5vh;
-    width: 200px;
+    width: 75vw;
     height: 20vh; }
   #profile-picture--pattern-wrapper {
     position: relative;

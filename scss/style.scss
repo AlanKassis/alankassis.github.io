@@ -5,8 +5,30 @@ $animate: all 0.2s ease-in-out;
   font-family: 'Indie Flower';
 }
 
-body {}
-$border-color: rgb(238,149,145);
+body {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:link {
+    color: white;
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  a:focus {
+    border-bottom: none;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+$primary-color: rgb(238,149,145);
+$secondary-color: rgba(220,112,228,1);
 
 .disclaimer {
   text-align: center;
@@ -51,33 +73,35 @@ $border-color: rgb(238,149,145);
   text-align: center;
 
   ion-icon {
-    background-color: $border-color;
+    color: white;
+    background-color: $primary-color;
     border-radius: 50%;
     padding: 0.3em;
     border: 1px solid black;
   }
 
   ion-icon:hover {
-    background-color: rgba(220,112,228,1);
+    background-color: $secondary-color;
   }
 }
-
 // .hero-down-button-container {
 //   position: relative;
 //   bottom: 50px;
 //   height: 36px;
 // }
+
 #hero-down-button--col {
-  bottom:50px;
+  bottom: 50px;
 }
+
 .hero-down-button {
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   position: relative;
   border-radius: 10%;
   width: 35px;
   height: 35px;
   transform: rotate(45deg);
-  background: linear-gradient(90deg, rgba(255,0,35,1) 0%, rgba(220,112,228,1) 50%, rgba(244,6,239,1) 100%);
+  background: linear-gradient(90deg, rgba(255,0,35,1) 0%, $secondary-color 50%, rgba(244,6,239,1) 100%);
   box-shadow: 10px 10px 10px 3px grey;
   border: 1px solid lightpink;
 }
@@ -110,10 +134,11 @@ $border-color: rgb(238,149,145);
   position: sticky;
   color: white;
   font-size: 2em;
-  background-color: $border-color;
+  background-color: $primary-color;
   height: 100px;
   text-align: center;
   align-items: center;
+  margin-bottom: 10vh !important;
 }
 
 .wrapper {
@@ -169,33 +194,45 @@ $border-color: rgb(238,149,145);
   }
 }
 
-#profile-picture--pattern-wrapper {
-  position: relative;
-  top: 25px;
-  left: 50px;
-  height: 50vh;
-  width: 500px;
-  margin: 0 auto;
-  border-radius: 10%;
-  z-index: -1;
-  color: $border-color;
-}
+
 
 #profile-picture {
-  margin: 5vh auto;
-  width: 500px;
+  margin: 2em auto 5vh;
+  width: 90%;
+  max-width: 700px;
   height: 50vh;
   background-image: url("../img/Alan-Japan.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 10%;
+  border-radius: 30%;
   // background-color: rgb(245,191,241);
-  border: 5px solid $border-color;
+  border: 5px solid $primary-color;
+}
+#pattern-wrapper {
+  position: relative;
+  top: 25px;
+  left: 50px;
+  height:inherit;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 30%;
+  z-index: -1;
+  color: $primary-color;
 }
 
 #about {
+
   text-align: center;
+
+  a {
+    color: $primary-color;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: $secondary-color;
+  }
 }
 
 #about h1 {
@@ -215,7 +252,7 @@ $border-color: rgb(238,149,145);
   text-align: center;
 
   .projects {
-    margin-top: 25vh;
+    margin-top: 5vh;
 
     h1 {
       font-size: 4em;
@@ -223,30 +260,33 @@ $border-color: rgb(238,149,145);
   }
 }
 
-
-  .coffee {
+.coffee {
+  text-align: center;
+  margin-top: 5vh;
+  h1 {
     text-align: center;
-    h1 {
-      text-align: center;
-      font-size: 4em;
-      margin-bottom: 5vh;
-      color:red;
-    }
-  }
-
-  #group-photo {
-    padding: 0 !important;
-    margin: 0;
+    font-size: 4em;
     color: red;
-    // at larger break points the height should increase
-    height: 30vh;
-    background-image: url("../img/coffee/group-photo.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: $border-color 5px solid;
   }
-
+}
+#coffee-photo-grid {
+  background-color: firebrick;
+  border: 10px solid black;
+  margin-bottom: 10vh;
+  img {
+    box-shadow: 5px 3px 10px 5px;
+  }
+}
+// #col-3 {
+//   padding-top: 60%;
+// }
+// #col-2 {
+//   padding-top: 40%;
+// }
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
 //Small screens only
 @media only screen and (max-width: 575px) {
   .hero-container {
@@ -264,11 +304,11 @@ $border-color: rgb(238,149,145);
   }
 
   .hero-left-content {
-display: none;
+    display: none;
   }
 
   .hero-right-content {
-display: none;
+    display: none;
   }
 
   .socials {
@@ -276,12 +316,13 @@ display: none;
     bottom: 10vh;
     font-size: 60%;
   }
+
   #hero-down-button {
     width: 20px;
-    height: 20px;;
+    height: 20px;
   }
+
   .nav {
-    
     font-size: 1em;
     height: 50px;
     position: relative;
@@ -290,7 +331,7 @@ display: none;
 
   #profile-picture {
     margin: 0 auto 5vh;
-    width: 200px;
+    width: 75vw;
     height: 20vh;
   }
 
@@ -302,7 +343,7 @@ display: none;
     width: 200px;
     border-radius: 10%;
     z-index: -1;
-    color: $border-color;
+    color: $primary-color;
   }
 
   #about h1 {
