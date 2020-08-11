@@ -2,6 +2,9 @@
   margin: 0;
   font-family: 'Indie Flower'; }
 
+.test {
+  color: red; }
+
 body a {
   text-decoration: none;
   color: white; }
