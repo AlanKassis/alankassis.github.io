@@ -2,9 +2,6 @@
   margin: 0;
   font-family: 'Indie Flower'; }
 
-.test {
-  color: red; }
-
 body a {
   text-decoration: none;
   color: white; }
@@ -196,7 +193,7 @@ body a:hover {
   border: 10px solid black;
   margin-bottom: 10vh; }
   #coffee-photo-grid img {
-    box-shadow: 5px 3px 10px 5px; }
+    box-shadow: 100px 3px 10px 5px; }
 
 .nopadding {
   padding: 0 !important;
