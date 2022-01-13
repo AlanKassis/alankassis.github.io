@@ -21,12 +21,12 @@ function watch() {
   //Initialize the browserSync with a server object with baseDir and index props
   browserSync.init({
     server: {
-      baseDir: "D:/gitpage/alankassis.github.io",
-      index: "index.html"
-    }
+      baseDir: "C:/Users/Sargeat Spider/Desktop/webdev_12-21/alankassis.github.io",
+      index: "index.html",
+    },
   });
   // Tell it what to watch
-  gulp.watch("D:/gitpage/alankassis.github.io/**/*.scss", style);
+  gulp.watch("C:/Users/Sargeat Spider/Desktop/webdev_12-21/alankassis.github.io/**/*.scss", style);
   // Tell it to reload
   gulp.watch("./**/*.html").on("change", browserSync.reload);
   gulp.watch("./**/*.js").on("change", browserSync.reload);

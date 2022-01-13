@@ -2,9 +2,6 @@
   margin: 0;
   font-family: 'Indie Flower'; }
 
-.test {
-  color: red; }
-
 body a {
   text-decoration: none;
   color: white; }
@@ -41,19 +38,14 @@ body a:hover {
   background-repeat: no-repeat;
   background-size: contain; }
 
-#hero-down-button-col {
-  height: 100px; }
-
 .hero-down-button {
   margin: 0 auto;
-  position: relative;
+  position: absolute;
   border-radius: 10%;
   width: 50px;
   height: 50px;
-  top: -200px;
-  right: 0;
+  top: 90vh;
   left: 0;
-  bottom: 0;
   transform: rotate(45deg);
   background: linear-gradient(90deg, #ff0023 0%, #dc70e4 50%, #f406ef 100%);
   box-shadow: 10px 10px 10px 3px grey;
@@ -83,11 +75,13 @@ body a:hover {
 
 .socials {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 1rem; }
   .socials ion-icon {
     color: white;
     background-color: #ee9591;
     border-radius: 50%;
+    font-size: xx-large;
     padding: 0.3em;
     border: 1px solid black; }
   .socials ion-icon:hover {
@@ -192,8 +186,6 @@ body a:hover {
   background-color: firebrick;
   border: 10px solid black;
   margin-bottom: 10vh; }
-  #coffee-photo-grid img {
-    box-shadow: 5px 3px 10px 5px; }
 
 .nopadding {
   padding: 0 !important;
