@@ -270,9 +270,17 @@ $secondary-color: rgba(220,112,228,1);
   background-color: firebrick;
   border: 10px solid black;
   margin-bottom: 10vh;
+  align-items: center;
+  justify-items: center;
 
   img {
     // box-shadow: 100px 3px 10px 5px;
+  }
+  #col-3 {
+    margin: 0 auto;
+    img {
+      padding: 1rem;
+    }
   }
 }
 // #col-3 {
@@ -352,5 +360,10 @@ $secondary-color: rgba(220,112,228,1);
   #projects .projects h1 {
     font-size: 2.9em;
   }
+  #col-3 {
+    background-color: greenyellow;
+  } 
+
+
 }
 //large screens

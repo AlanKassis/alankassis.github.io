@@ -185,7 +185,13 @@ body a:hover {
 #coffee-photo-grid {
   background-color: firebrick;
   border: 10px solid black;
-  margin-bottom: 10vh; }
+  margin-bottom: 10vh;
+  align-items: center;
+  justify-items: center; }
+  #coffee-photo-grid #col-3 {
+    margin: 0 auto; }
+    #coffee-photo-grid #col-3 img {
+      padding: 1rem; }
 
 .nopadding {
   padding: 0 !important;
@@ -232,4 +238,6 @@ body a:hover {
   #about h1 {
     font-size: 2.9em; }
   #projects .projects h1 {
-    font-size: 2.9em; } }
+    font-size: 2.9em; }
+  #col-3 {
+    background-color: greenyellow; } }
