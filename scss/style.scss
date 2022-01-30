@@ -61,8 +61,6 @@ $secondary-color: rgba(220,112,228,1);
   border-radius: 10%;
   width: 50px;
   height: 50px;
-  top:90vh;
-  left:0;
   transform: rotate(45deg);
   background: linear-gradient(90deg, rgba(255,0,35,1) 0%, $secondary-color 50%, rgba(244,6,239,1) 100%);
   box-shadow: 10px 10px 10px 3px grey;
@@ -262,7 +260,6 @@ $secondary-color: rgba(220,112,228,1);
   h1 {
     text-align: center;
     font-size: 4em;
-    color: red;
   }
 }
 
@@ -270,18 +267,21 @@ $secondary-color: rgba(220,112,228,1);
   background-color: firebrick;
   border: 10px solid black;
   margin-bottom: 10vh;
-  align-items: center;
-  justify-items: center;
 
   img {
-    // box-shadow: 100px 3px 10px 5px;
+    height:706px;
+    width:530px;
   }
-  #col-3 {
-    margin: 0 auto;
-    img {
-      padding: 1rem;
+  #col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+  }
+     #col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     }
-  }
 }
 // #col-3 {
 //   padding-top: 60%;
@@ -320,7 +320,7 @@ $secondary-color: rgba(220,112,228,1);
 
   .socials {
     position: relative;
-    bottom: 10vh;
+    bottom: 13vh;
     font-size: 60%;
   }
 
@@ -328,6 +328,19 @@ $secondary-color: rgba(220,112,228,1);
     width: 20px;
     height: 20px;
   }
+  @keyframes pulse {
+  0% {
+    top: -150px;
+  }
+
+  50% {
+    top: -100px;
+  }
+
+  100% {
+    top: -150px;
+  }
+}
 
   .nav {
     font-size: 1em;
@@ -360,9 +373,7 @@ $secondary-color: rgba(220,112,228,1);
   #projects .projects h1 {
     font-size: 2.9em;
   }
-  #col-3 {
-    background-color: greenyellow;
-  } 
+ 
 
 
 }
