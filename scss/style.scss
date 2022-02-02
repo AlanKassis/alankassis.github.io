@@ -45,8 +45,9 @@ $secondary-color: rgba(220,112,228,1);
   }
 }
 
+
 #hero-image {
-  position: relative;;
+  position: relative;
   // margin: 2em auto 5vh;
   width: 100%;
   height:100%;
@@ -62,63 +63,93 @@ $secondary-color: rgba(220,112,228,1);
 
 #pattern-wrapper {
   position: relative;
-   top: 25px;
-   left: 50px;
-  height:500px;
+  min-height:300px;
+  bottom:250px;
+  left: 30px;
+  height:100%;
   width: 100%;
   margin: 0 auto;
   border-radius: 30%;
-  // z-index:-1;
-  background-color: black;
+  z-index:-1;
+  // background-color: $secondary-color;
   color: $primary-color;
 }
 
-.hero-down-button {
-  margin: 0 auto;
-  position: absolute;
-  border-radius: 10%;
-  width: 50px;
-  height: 50px;
-  transform: rotate(45deg);
-  background: linear-gradient(90deg, rgba(255,0,35,1) 0%, $secondary-color 50%, rgba(244,6,239,1) 100%);
-  box-shadow: 10px 10px 10px 3px grey;
-  border: 1px solid lightpink;
 
-}
+#about {
+  text-align: center;
 
-#hero-down-button {
-  position: relative;
-  animation-name: pulse;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-}
-
-#hero-down-button:hover {
-  cursor: pointer;
-}
-
-@keyframes pulse {
-  0% {
-    top: -200px;
+  a {
+    color: $primary-color;
   }
 
-  50% {
-    top: -150px;
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: $secondary-color;
   }
+}
 
-  100% {
-    top: -200px;
+#about h1 {
+  // font-size: 4em;
+  padding-left: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.introduction {
+  //  margin: 0 5em;
+  padding-left: 2.5rem;
+   font-size: 2em;
+  abbr[title] {
+    text-decoration: none;
   }
 }
-.hero-right-content {
-  position: relative;
-  border: 1px solid black;
-}
+
+// .hero-down-button {
+//   margin: 0 auto;
+//   position: absolute;
+//   border-radius: 10%;
+//   width: 50px;
+//   height: 50px;
+//   transform: rotate(45deg);
+//   background: linear-gradient(90deg, rgba(255,0,35,1) 0%, $secondary-color 50%, rgba(244,6,239,1) 100%);
+//   box-shadow: 10px 10px 10px 3px grey;
+//   border: 1px solid lightpink;
+
+// }
+
+// #hero-down-button {
+//   position: relative;
+//   animation-name: pulse;
+//   animation-duration: 2s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: ease-in;
+// }
+
+// #hero-down-button:hover {
+//   cursor: pointer;
+// }
+
+// @keyframes pulse {
+//   0% {
+//     top: -200px;
+//   }
+
+//   50% {
+//     top: -150px;
+//   }
+
+//   100% {
+//     top: -200px;
+//   }
+// }
+// .hero-right-content {
+//   position: relative;
+//   border: 1px solid black;
+// }
 
 .socials {
   position: relative;
-  text-align: center;
+  text-align: right;
   padding-bottom: 1rem;
   ion-icon {
     color: white;
@@ -199,32 +230,6 @@ $secondary-color: rgba(220,112,228,1);
 
 
 
-
-#about {
-  text-align: center;
-
-  a {
-    color: $primary-color;
-  }
-
-  a:hover {
-    text-decoration: underline;
-    text-decoration-color: $secondary-color;
-  }
-}
-
-#about h1 {
-  font-size: 4em;
-}
-
-.introduction {
-  margin: 0 15vw;
-  font-size: 2em;
-
-  abbr[title] {
-    text-decoration: none;
-  }
-}
 
 #projects {
   text-align: center;
