@@ -15,54 +15,13 @@
     integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
     crossorigin="anonymous"></script>
 </head>
+<!-- Todo Tasks -->
+<!-- Change the Navbar to be flex displayed on the right, Include a small Photo as a logo on left?-->
+<!-- Change the hero section to a different picture by Den and get rid of the list just go straight into hey I'm Al -->
+<!-- Change or delete the floating button -->
+<!-- Add the socials just below the about in the hero -->
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg" id="hero-image">
-      </div>
-      <div class="col-lg d-none d-lg-block" id="hero-container">
-        <ul>
-          <li>Web Designer</li>
-          <li>Front End Ninja</li>
-          <li>Barista</li>
-        </ul>
-      </div>
-    </div>
-    <!-- display absolute instead -->
-    
-    <a href="#about">
-      <div class="hero-down-button" id="hero-down-button" tabindex="0">
-    </div>
-    </a>
-    <!-- close the hero container -->
-    </div>
-
-    <!-- Add Links to socials -->
-    <div class="socials container-fluid">
-      <div class="row" id="socials-1ow">
-        <div class="col">
-          <a href="https://www.facebook.com/alan.kassis">
-            <ion-icon name="logo-facebook">facebook</ion-icon>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://www.instagram.com/alan_kassis/">
-            <ion-icon name="logo-instagram">insta
-        </div></a>
-        <div class="col">
-          <a href="https://linkedin.com/in/alan-kassis-39a75059">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://github.com/AlanKassis">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- Add Nav Bar -->
   <div class="nav container-fluid">
     <div class="row">
@@ -70,8 +29,8 @@
         <div class="hover hover-1" id="nav1"> <a href="#projects"> * Projects * </a> </div>
       </div>
       <!-- <div class="wrapper col">
-        <div class="col hover hover-1" id="skills"k> * Skills *</div>
-      </div> -->
+          <div class="col hover hover-1" id="skills"k> * Skills *</div>
+        </div> -->
       <div class="wrapper col">
         <div class="col hover hover-1" id="nav2"> <a href="#coffee"> * Coffee * </a> </div>
       </div>
@@ -80,24 +39,77 @@
       </div>
     </div>
   </div>
+  <!-- hero container -->
+  <div class="container">
+    <div class="row" style="display:flex; align-items: flex-start;">
+      <div class="col-lg">
+        <img src="./img/Alan-Japan.jpg" id="hero-image">
+        </img>
+      </div>
+      <div class="col-lg d-none d-lg-block" id="hero-container">
+        <div id="about">
+          <h1> * Hey, I'm Alan * </h1>
+        </div>
+        <!-- <div class="introduction"> -->
+        <div style="display: flex; flex-direction: column; text-align: center; ">
+          <p>
+          I am a web developer based Australia. I spend my days teaching myself to build websites,
+          working as a coffee makin' expertand practicing my <abbr title="Japanese Language">日本語</abbr> skills by watching <em>all</em> the anime.
+         </p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- display absolute instead -->
+
+  <!-- <a href="#about">
+      <div class="hero-down-button" id="hero-down-button" tabindex="0">
+    </div>
+    </a> -->
+  <!-- close the hero container -->
+
+  <!-- Add Links to socials -->
+  <div class="socials container-fluid">
+    <div class="row" id="socials-1ow">
+      <div class="col">
+        <a href="https://www.facebook.com/alan.kassis">
+          <ion-icon name="logo-facebook">facebook</ion-icon>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.instagram.com/alan_kassis/">
+          <ion-icon name="logo-instagram">insta
+      </div></a>
+      <div class="col">
+        <a href="https://linkedin.com/in/alan-kassis-39a75059">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://github.com/AlanKassis">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
 
   <!-- ************** -->
   <!-- About section  -->
   <!-- ************** -->
   <div class="container-fluid ">
-    <div id="about">
+    <!-- <div id="about">
       <h1> * Hey, I'm Alan * </h1>
-      <div id="profile-picture">
-        <div class="pattern-dots-sm gray-light" id="pattern-wrapper">
-        </div>
       </div>
+
       <div class="introduction">
         I am a <br>web developer based Australia. I spend my days teaching myself to build websites,
         working as a coffee makin' expert  
         </a>
         and practicing my <abbr title="Japanese Language">日本語</abbr> skills by watching <em>all</em> the anime.
       </div>
-    </div>
+    </div> -->
   </div>
 
   <!-- ************** -->
@@ -145,13 +157,13 @@
     <!-- design content column by column not row by row -->
     <h1 class="text-center py-2"> ~made by yours truly~ </h1>
     <div class="row">
-      <div class="col-lg-6 col-sm-12" id="col-1" >
+      <div class="col-lg-6 col-sm-12" id="col-1">
         <img src="img/coffee/keep cups.jpg" alt="" class="img-fluid mb-4">
         <img src="img/coffee/swan.jpg" alt="" class="img-fluid mb-4 ">
       </div>
       <div class="col-lg-6 col-sm-12" id="col-2">
-          <img src="img/coffee/cap.JPG" alt="" class="img-fluid mb-4">
-          <img src="img/coffee/swan-mocha.jpg" alt="" class="img-fluid mb-4">
+        <img src="img/coffee/cap.JPG" alt="" class="img-fluid mb-4">
+        <img src="img/coffee/swan-mocha.jpg" alt="" class="img-fluid mb-4">
       </div>
     </div>
   </div>

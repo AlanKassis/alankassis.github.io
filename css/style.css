@@ -30,13 +30,22 @@ body a:hover {
     font-size: 6em; }
 
 #hero-image {
+  position: relative;
   width: 100%;
-  height: 100vh;
-  background-color: white;
-  background-image: url("../img/banner_image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  height: 100%;
+  border-radius: 30%;
+  border: 5px solid #ee9591; }
+
+#pattern-wrapper {
+  position: relative;
+  top: 25px;
+  left: 50px;
+  height: 500px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 30%;
+  background-color: black;
+  color: #ee9591; }
 
 .hero-down-button {
   margin: 0 auto;
@@ -124,29 +133,6 @@ body a:hover {
     opacity: 1; }
   .wrapper:hover .hover.hover-1:after, .wrapper:hover .hover.hover-1:before {
     width: 50%; }
-
-#profile-picture {
-  margin: 2em auto 5vh;
-  width: 90%;
-  max-width: 700px;
-  height: 50vh;
-  background-image: url("../img/Alan-Japan.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 30%;
-  border: 5px solid #ee9591; }
-
-#pattern-wrapper {
-  position: relative;
-  top: 25px;
-  left: 50px;
-  height: inherit;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 30%;
-  z-index: -1;
-  color: #ee9591; }
 
 #about {
   text-align: center; }

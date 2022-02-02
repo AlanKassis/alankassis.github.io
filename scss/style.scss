@@ -46,13 +46,31 @@ $secondary-color: rgba(220,112,228,1);
 }
 
 #hero-image {
+  position: relative;;
+  // margin: 2em auto 5vh;
   width: 100%;
-  height: 100vh;
-  background-color: white;
-  background-image: url("../img/banner_image.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  height:100%;
+  // height: 50vh;
+  // background-image: url("../img/Alan-Japan.jpg");
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  border-radius: 30%;
+  // background-color: rgb(245,191,241);
+  border: 5px solid $primary-color;
+}
+
+#pattern-wrapper {
+  position: relative;
+   top: 25px;
+   left: 50px;
+  height:500px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 30%;
+  // z-index:-1;
+  background-color: black;
+  color: $primary-color;
 }
 
 .hero-down-button {
@@ -93,8 +111,6 @@ $secondary-color: rgba(220,112,228,1);
     top: -200px;
   }
 }
-
-
 .hero-right-content {
   position: relative;
   border: 1px solid black;
@@ -117,13 +133,6 @@ $secondary-color: rgba(220,112,228,1);
     background-color: $secondary-color;
   }
 }
-// .hero-down-button-container {
-//   position: relative;
-//   bottom: 50px;
-//   height: 36px;
-// }
-
-
 
 .nav {
   position: sticky;
@@ -135,14 +144,13 @@ $secondary-color: rgba(220,112,228,1);
   align-items: center;
   margin-bottom: 10vh !important;
 }
-
+//underline elements in the nav
 .wrapper {
   .hover {
     margin: 0 auto;
     padding: 0;
     transition: $animate;
     position: relative;
-
     &:after,
     &:before {
       content: "";
@@ -189,31 +197,8 @@ $secondary-color: rgba(220,112,228,1);
   }
 }
 
-#profile-picture {
-  margin: 2em auto 5vh;
-  width: 90%;
-  max-width: 700px;
-  height: 50vh;
-  background-image: url("../img/Alan-Japan.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 30%;
-  // background-color: rgb(245,191,241);
-  border: 5px solid $primary-color;
-}
 
-#pattern-wrapper {
-  position: relative;
-  top: 25px;
-  left: 50px;
-  height: inherit;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 30%;
-  z-index: -1;
-  color: $primary-color;
-}
+
 
 #about {
   text-align: center;
