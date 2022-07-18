@@ -1,91 +1,97 @@
 * {
   margin: 0;
-  font-family: "Indie Flower"; }
+  font-family: "Indie Flower";
+}
 
 body a {
   text-decoration: none;
-  color: white; }
+  color: white;
+}
 
 body a:link {
-  color: white; }
+  color: white;
+}
 
 body a:visited {
-  color: white; }
+  color: white;
+}
 
 body a:focus {
-  border-bottom: none; }
+  border-bottom: none;
+}
 
 body a:hover {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 #hero-container {
-  margin-top: 150px; }
-  #hero-container ul li {
-    list-style: none;
-    margin-bottom: 1em;
-    font-size: 6em; }
+  margin-top: 150px;
+}
+#hero-container ul li {
+  list-style: none;
+  margin-bottom: 1em;
+  font-size: 6em;
+}
 
 #hero-col-1 {
-  margin-top: 0;
-  padding-top: 0;
   display: block;
   margin: auto;
-  text-align: center; }
+  text-align: center;
+}
 
 #hero-image {
   width: 50vw;
   height: 50%;
   max-width: 1080px;
   border-radius: 30%;
-  border: 5px solid #ee9591; }
-
-#pattern-wrapper {
-  position: relative;
-  min-height: 300px;
-  bottom: 250px;
-  left: 30px;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 30%;
-  z-index: -1;
-  color: #ee9591; }
+  border: 5px solid #ee9591;
+}
 
 #about {
   margin-top: 3em;
-  text-align: center; }
-  #about a {
-    color: #ee9591; }
-  #about a:hover {
-    text-decoration: underline;
-    text-decoration-color: #dc70e4; }
+  text-align: center;
+}
+#about a {
+  color: #ee9591;
+}
+#about a:hover {
+  text-decoration: underline;
+  text-decoration-color: #dc70e4;
+}
 
 #about h1 {
   padding-left: 2.5rem;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+}
 
 .introduction {
   padding-left: 2.5rem;
-  font-size: 2em; }
-  .introduction abbr[title] {
-    text-decoration: none; }
+  font-size: 2em;
+}
+.introduction abbr[title] {
+  text-decoration: none;
+}
 
 .socials {
   position: relative;
   text-align: right;
-  padding-bottom: 1rem; }
-  .socials ion-icon {
-    color: white;
-    background-color: #ee9591;
-    border-radius: 50%;
-    font-size: xx-large;
-    padding: 0.3em;
-    border: 1px solid black; }
-  .socials ion-icon:hover {
-    background-color: #dc70e4; }
+  padding-bottom: 1rem;
+}
+.socials ion-icon {
+  color: white;
+  background-color: #ee9591;
+  border-radius: 50%;
+  font-size: xx-large;
+  padding: 0.3em;
+  border: 1px solid black;
+}
+.socials ion-icon:hover {
+  background-color: #dc70e4;
+}
 
 nav {
-  height: 3vh; }
+  height: 3vh;
+}
 
 .nav {
   position: sticky;
@@ -94,108 +100,109 @@ nav {
   background-color: #ee9591;
   height: 100px;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .wrapper .hover {
   margin: 0 auto;
   padding: 0;
   transition: all 0.2s ease-in-out;
-  position: relative; }
-  .wrapper .hover:after, .wrapper .hover:before {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    width: 0;
-    height: 5px;
-    margin: 5px 0 0;
-    transition: all 0.2s ease-in-out;
-    transition-duration: 0.75s;
-    opacity: 0;
-    background-color: #f5bff1; }
-  .wrapper .hover.hover-1:before {
-    left: 0; }
-  .wrapper .hover.hover-1:after {
-    right: 0; }
+  position: relative;
+}
+.wrapper .hover:after,
+.wrapper .hover:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 0;
+  height: 5px;
+  margin: 5px 0 0;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.75s;
+  opacity: 0;
+  background-color: #f5bff1;
+}
+.wrapper .hover.hover-1:before {
+  left: 0;
+}
+.wrapper .hover.hover-1:after {
+  right: 0;
+}
 
 .wrapper:hover {
   cursor: pointer;
-  color: #f5bff1; }
-  .wrapper:hover .hover:after, .wrapper:hover .hover:before {
-    width: 100%;
-    opacity: 1; }
-  .wrapper:hover .hover.hover-1:after, .wrapper:hover .hover.hover-1:before {
-    width: 50%; }
+  color: #f5bff1;
+}
+.wrapper:hover .hover:after,
+.wrapper:hover .hover:before {
+  width: 100%;
+  opacity: 1;
+}
+.wrapper:hover .hover.hover-1:after,
+.wrapper:hover .hover.hover-1:before {
+  width: 50%;
+}
 
 #projects {
-  text-align: center; }
-  #projects .projects {
-    margin-top: 5vh; }
-    #projects .projects h1 {
-      font-size: 4em; }
+  text-align: center;
+}
+#projects .projects {
+  margin-top: 5vh;
+}
+#projects .projects h1 {
+  font-size: 4em;
+}
 
 .coffee {
   text-align: center;
-  margin-top: 5vh; }
-  .coffee h1 {
-    text-align: center;
-    font-size: 4em; }
+  margin-top: 5vh;
+}
+.coffee h1 {
+  text-align: center;
+  font-size: 4em;
+}
 
 #coffee-photo-grid {
   background-color: firebrick;
   border: 10px solid black;
-  margin-bottom: 10vh; }
-  #coffee-photo-grid img {
-    height: 706px;
-    width: 530px; }
-  #coffee-photo-grid #col-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
-  #coffee-photo-grid #col-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; }
+  margin-bottom: 10vh;
+}
+#coffee-photo-grid img {
+  height: 706px;
+  width: 530px;
+}
+#coffee-photo-grid #col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#coffee-photo-grid #col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
 .nopadding {
   padding: 0 !important;
-  margin: 0 !important; }
+  margin: 0 !important;
+}
 
-@media only screen and (max-width: 575px) {
+/* @media only screen and (max-width: 575px) {
   .hero-container {
     display: grid;
     grid-template-areas: "img img" "l r";
     font-size: 1.2em; }
     .hero-container ul li {
       margin: 0; }
-  .hero-image {
-    grid-area: img; }
-  .hero-left-content {
-    display: none; }
-  .hero-right-content {
-    display: none; }
   .socials {
     position: relative;
     bottom: 13vh;
     font-size: 60%; }
-  #hero-down-button {
-    width: 20px;
-    height: 20px; }
-  @keyframes pulse {
-    0% {
-      top: -150px; }
-    50% {
-      top: -100px; }
-    100% {
-      top: -150px; } }
   .nav {
     font-size: 1em;
     height: 50px;
     position: relative;
     margin-bottom: 10px !important; }
-  #profile-picture {
-    margin: 0 auto 5vh;
-    width: 75vw;
-    height: 20vh; }
   #profile-picture--pattern-wrapper {
     position: relative;
     top: 15px;
@@ -208,4 +215,4 @@ nav {
   #about h1 {
     font-size: 2.9em; }
   #projects .projects h1 {
-    font-size: 2.9em; } }
+    font-size: 2.9em; } } */

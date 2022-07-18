@@ -39,12 +39,11 @@ $secondary-color: rgba(220, 112, 228, 1);
   }
 }
 #hero-col-1 {
-  margin-top: 0;
-  padding-top: 0;
   display: block;
   margin: auto;
   text-align: center;
 }
+
 #hero-image {
   width: 50vw;
   height: 50%;
@@ -53,19 +52,19 @@ $secondary-color: rgba(220, 112, 228, 1);
   border: 5px solid $primary-color;
 }
 
-#pattern-wrapper {
-  position: relative;
-  min-height: 300px;
-  bottom: 250px;
-  left: 30px;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 30%;
-  z-index: -1;
-  // background-color: $secondary-color;
-  color: $primary-color;
-}
+// #pattern-wrapper {
+//   position: relative;
+//   min-height: 300px;
+//   bottom: 250px;
+//   left: 30px;
+//   height: 100%;
+//   width: 100%;
+//   margin: 0 auto;
+//   border-radius: 30%;
+//   z-index: -1;
+//   // background-color: $secondary-color;
+//   color: $primary-color;
+// }
 
 #about {
   margin-top: 3em;
