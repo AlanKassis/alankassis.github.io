@@ -286,40 +286,10 @@ nav {
     }
   }
 
-  .hero-image {
-    grid-area: img;
-  }
-
-  .hero-left-content {
-    display: none;
-  }
-
-  .hero-right-content {
-    display: none;
-  }
-
   .socials {
     position: relative;
     bottom: 13vh;
     font-size: 60%;
-  }
-
-  #hero-down-button {
-    width: 20px;
-    height: 20px;
-  }
-  @keyframes pulse {
-    0% {
-      top: -150px;
-    }
-
-    50% {
-      top: -100px;
-    }
-
-    100% {
-      top: -150px;
-    }
   }
 
   .nav {
@@ -327,12 +297,6 @@ nav {
     height: 50px;
     position: relative;
     margin-bottom: 10px !important;
-  }
-
-  #profile-picture {
-    margin: 0 auto 5vh;
-    width: 75vw;
-    height: 20vh;
   }
 
   #profile-picture--pattern-wrapper {
