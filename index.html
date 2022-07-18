@@ -23,136 +23,70 @@
 
 <body>
   <!-- Add Nav Bar -->
-  <div class="nav container-fluid">
-    <div class="row">
-      <div class="wrapper col">
-        <div class="hover hover-1" id="nav1"> <a href="#projects"> * Projects * </a> </div>
-      </div>
-      <!-- <div class="wrapper col">
-          <div class="col hover hover-1" id="skills"k> * Skills *</div>
-        </div> -->
-      <div class="wrapper col">
-        <div class="col hover hover-1" id="nav2"> <a href="#coffee"> * Coffee * </a> </div>
-      </div>
-      <div class="wrapper col">
-        <div class="col hover hover-1" id="nav3"> <a href="#contact">* Contact * </a> </div>
-      </div>
-    </div>
-  </div>
+  <nav>
+    <ul class="nav justify-content-around">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">contact</a>
+      </li>
+    </ul>
+  </nav>
   <!-- hero container -->
-  <div class="container">
-    <div class="row" style="display:flex; align-items: flex-start;">
-      <div class="col-lg" id="hero-col-1">
+  <div class="container" id="hero-container">
+    <div class="row">
+      <div class="col" id="hero-col-1">
         <img src="./img/Alan-Japan.jpg" id="hero-image">
         </img>
-        <div class="pattern-dots-lg gray-light" id="pattern-wrapper"></div>
+        <!-- <div class="pattern-dots-lg gray-light" id="pattern-wrapper"></div> -->
       </div>
-      <div class="col-lg hero-col-2" id="hero-container">
-        <div id="about">
-          <h1> * Hey, I'm Alan * </h1>
-        </div>
-        <div class="introduction" style="display: flex; flex-direction: column; text-align: center;">
-          <p>
-            I am a Frontend Web Developer based Australia. I spend my days building websites,
-            pouring amazing latte art and practicing my <abbr title="Japanese Language">日本語</abbr> skills.
-          </p>
-          <div class="socials container-fluid">
-            <a href="https://linkedin.com/in/alan-kassis-39a75059">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://github.com/AlanKassis">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
+      <!-- ************** -->
+      <!-- About section  -->
+      <!-- ************** -->
+      <div class="row">
+        <div class="col hero-col-2">
+          <div id="about">
+            <h1> * Hey, I'm Alan * </h1>
+          </div>
+          <div class="introduction" style="display: flex; flex-direction: column; text-align: center;">
+            <p>
+              I am a Frontend Web Developer based Australia. I spend my days building websites,
+              pouring amazing latte art and practicing my <abbr title="Japanese Language">日本語</abbr> skills.
+            </p>
+            <div class="socials container-fluid">
+              <a href="https://linkedin.com/in/alan-kassis-39a75059">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="https://github.com/AlanKassis">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- display absolute instead -->
-
-  <!-- <a href="#about">
-      <div class="hero-down-button" id="hero-down-button" tabindex="0">
-    </div>
-    </a> -->
-  <!-- close the hero container -->
-
-  <!-- Add Links to socials -->
-
-
-
-  <!-- ************** -->
-  <!-- About section  -->
-  <!-- ************** -->
-  <div class="container-fluid ">
-    <!-- <div id="about">
-      <h1> * Hey, I'm Alan * </h1>
-      </div>
-
-      <div class="introduction">
-        I am a <br>web developer based Australia. I spend my days teaching myself to build websites,
-        working as a coffee makin' expert  
-        </a>
-        and practicing my <abbr title="Japanese Language">日本語</abbr> skills by watching <em>all</em> the anime.
-      </div>
-    </div> -->
-  </div>
-
   <!-- ************** -->
   <!-- Projects section  -->
   <!-- ************** -->
 
-  <div class="container-fluid" id="projects">
+  <!-- <div class="container-fluid" id="projects">
     <div class="projects container">
       <h1> * Projects * </h1>
     </div>
     <div id="coming-soon">
       <h2> More to come ... </h2>
     </div>
-  </div>
+  </div> -->
 
   <!-- ************** -->
-  <!-- Skills section  -->
+  <!-- Resume Section  -->
   <!-- ************** -->
-
-  <!-- TODO: Add University of Redlands Credentials -->
-  <!-- TODO: Add Front-end Developer certificate -->
-  <!-- <div class="container-fluid" id="skills">
-      <div class="skills container">
-        <h1> * Skills  * </h1>
-      </div>
-      <div id="university">
-        <h2> Bachelors of Arts in <strong>Computer Science</strong> from the University of Redlands, California </h2>
-        <h3> Minors in <strong>Japanese</strong> & <strong>Business</strong> </h3>
-      </div>
-      <div id="certificate">
-        TODO: add Front-End Web Developer Nanodegree png
-      </div> -->
-
-  <!-- ************** -->
-  <!-- Coffee section  -->
-  <!-- ************** -->
-  <div class="coffee container-fluid" id="coffee">
-    <h1> * Coffee * </h1>
-  </div>
-
-  <!-- TODO: Implement a responsive image grid here -->
-  <div class="container" id="coffee-photo-grid">
-    <!-- this wasn't working nicely because the grid needed a container  -->
-    <!-- a grid only needs one row  -->
-    <!-- design content column by column not row by row -->
-    <h1 class="text-center py-2"> ~made by yours truly~ </h1>
-    <div class="row">
-      <div class="col-lg-6 col-sm-12" id="col-1">
-        <img src="img/coffee/keep cups.jpg" alt="" class="img-fluid mb-4">
-        <img src="img/coffee/swan.jpg" alt="" class="img-fluid mb-4 ">
-      </div>
-      <div class="col-lg-6 col-sm-12" id="col-2">
-        <img src="img/coffee/cap.JPG" alt="" class="img-fluid mb-4">
-        <img src="img/coffee/swan-mocha.jpg" alt="" class="img-fluid mb-4">
-      </div>
-    </div>
-  </div>
 
 </body>
 <script src="js/page.js">
