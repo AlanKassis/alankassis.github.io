@@ -2,7 +2,7 @@ $animate: all 0.2s ease-in-out;
 
 * {
   margin: 0;
-  font-family: "Indie Flower";
+  // font-family: "Indie Flower";
 }
 
 body {
@@ -260,6 +260,12 @@ nav {
     text-align: left;
     font-family: "Times New Roman", Times, serif !important;
     font-size: xx-large;
+  }
+  ul {
+    li {
+      list-style: square;
+    }
+    text-align: left;
   }
 }
 //Small screens only

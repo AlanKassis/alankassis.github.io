@@ -1,6 +1,5 @@
 * {
-  margin: 0;
-  font-family: "Indie Flower"; }
+  margin: 0; }
 
 body a {
   text-decoration: none;
@@ -143,6 +142,10 @@ nav {
     text-align: left;
     font-family: "Times New Roman", Times, serif !important;
     font-size: xx-large; }
+  #resume-container ul {
+    text-align: left; }
+    #resume-container ul li {
+      list-style: square; }
 
 @media only screen and (max-width: 575px) {
   .hero-container {
