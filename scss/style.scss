@@ -95,53 +95,9 @@ $secondary-color: rgba(220, 112, 228, 1);
   }
 }
 
-// .hero-down-button {
-//   margin: 0 auto;
-//   position: absolute;
-//   border-radius: 10%;
-//   width: 50px;
-//   height: 50px;
-//   transform: rotate(45deg);
-//   background: linear-gradient(90deg, rgba(255,0,35,1) 0%, $secondary-color 50%, rgba(244,6,239,1) 100%);
-//   box-shadow: 10px 10px 10px 3px grey;
-//   border: 1px solid lightpink;
-
-// }
-
-// #hero-down-button {
-//   position: relative;
-//   animation-name: pulse;
-//   animation-duration: 2s;
-//   animation-iteration-count: infinite;
-//   animation-timing-function: ease-in;
-// }
-
-// #hero-down-button:hover {
-//   cursor: pointer;
-// }
-
-// @keyframes pulse {
-//   0% {
-//     top: -200px;
-//   }
-
-//   50% {
-//     top: -150px;
-//   }
-
-//   100% {
-//     top: -200px;
-//   }
-// }
-// .hero-right-content {
-//   position: relative;
-//   border: 1px solid black;
-// }
-
 .socials {
-  position: relative;
   text-align: right;
-  padding-bottom: 1rem;
+  padding-bottom: 1em;
   ion-icon {
     color: white;
     background-color: $primary-color;
@@ -232,83 +188,29 @@ nav {
   }
 }
 
-.coffee {
-  text-align: center;
-  margin-top: 5vh;
-
-  h1 {
-    text-align: center;
-    font-size: 4em;
-  }
-}
-
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
 }
 
-#resume-container {
-  text-align: center;
-  margin-top: 50px;
-  padding-top: 2em;
-  max-width: 75vw;
-  p,
-  h1,
-  h2,
-  h3,
-  a {
-    text-align: left;
-    font-family: "Times New Roman", Times, serif !important;
-    font-size: xx-large;
-  }
-  ul {
-    li {
-      list-style: square;
-    }
-    text-align: left;
-  }
-}
 //Small screens only
 @media only screen and (max-width: 575px) {
   .hero-container {
-    display: grid;
-    grid-template-areas: "img img" "l r";
-    font-size: 1.2em;
+    // display: grid;
+    // grid-template-areas: "img img" "l r";
+    // font-size: 1.2em;
 
-    ul li {
-      margin: 0;
-    }
+    // ul li {
+    //   margin: 0;
+    // }
   }
 
   .socials {
     position: relative;
-    bottom: 13vh;
     font-size: 60%;
   }
 
-  .nav {
-    font-size: 1em;
-    height: 50px;
-    position: relative;
-    margin-bottom: 10px !important;
-  }
-
-  #profile-picture--pattern-wrapper {
-    position: relative;
-    top: 15px;
-    left: 25px;
-    height: 20vh;
-    width: 200px;
-    border-radius: 10%;
-    z-index: -1;
-    color: $primary-color;
-  }
-
   #about h1 {
-    font-size: 2.9em;
-  }
-
-  #projects .projects h1 {
     font-size: 2.9em;
   }
 }

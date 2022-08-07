@@ -56,9 +56,8 @@ body a:hover {
     text-decoration: none; }
 
 .socials {
-  position: relative;
   text-align: right;
-  padding-bottom: 1rem; }
+  padding-bottom: 1em; }
   .socials ion-icon {
     color: white;
     background-color: #ee9591;
@@ -118,61 +117,13 @@ nav {
     #projects .projects h1 {
       font-size: 4em; }
 
-.coffee {
-  text-align: center;
-  margin-top: 5vh; }
-  .coffee h1 {
-    text-align: center;
-    font-size: 4em; }
-
 .nopadding {
   padding: 0 !important;
   margin: 0 !important; }
 
-#resume-container {
-  text-align: center;
-  margin-top: 50px;
-  padding-top: 2em;
-  max-width: 75vw; }
-  #resume-container p,
-  #resume-container h1,
-  #resume-container h2,
-  #resume-container h3,
-  #resume-container a {
-    text-align: left;
-    font-family: "Times New Roman", Times, serif !important;
-    font-size: xx-large; }
-  #resume-container ul {
-    text-align: left; }
-    #resume-container ul li {
-      list-style: square; }
-
 @media only screen and (max-width: 575px) {
-  .hero-container {
-    display: grid;
-    grid-template-areas: "img img" "l r";
-    font-size: 1.2em; }
-    .hero-container ul li {
-      margin: 0; }
   .socials {
     position: relative;
-    bottom: 13vh;
     font-size: 60%; }
-  .nav {
-    font-size: 1em;
-    height: 50px;
-    position: relative;
-    margin-bottom: 10px !important; }
-  #profile-picture--pattern-wrapper {
-    position: relative;
-    top: 15px;
-    left: 25px;
-    height: 20vh;
-    width: 200px;
-    border-radius: 10%;
-    z-index: -1;
-    color: #ee9591; }
   #about h1 {
-    font-size: 2.9em; }
-  #projects .projects h1 {
     font-size: 2.9em; } }
