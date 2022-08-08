@@ -46,11 +46,9 @@ body a:hover {
     text-decoration-color: #dc70e4; }
 
 #about h1 {
-  padding-left: 2.5rem;
   margin-bottom: 3rem; }
 
 .introduction {
-  padding-left: 2.5rem;
   font-size: 2em; }
   .introduction abbr[title] {
     text-decoration: none; }
